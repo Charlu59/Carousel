@@ -3,23 +3,23 @@ Carousel
 Carousel dynamique with many options
 
 ## DataSource
-<blockquote>
-<p>@protocol CarouselDataSource<NSObject></p>
-<p>@required</p>
-<p>-(NSInteger)carouselNumberOfPages:(Carousel *)carousel;</p>
-<p>-(UIView *)carousel:(Carousel *)carousel viewForPageAtIndex:(NSInteger)index;</p>
-<p>@optional</p>
-<p>-(UIView *)carouselViewSeparator:(Carousel *)carousel;</p>
-<p>@end</p>
-</blockquote>
+    
+    @protocol CarouselDataSource<NSObject>@required
+    -(NSInteger)carouselNumberOfPages:(Carousel *)carousel;
+    -(UIView *)carousel:(Carousel *)carousel viewForPageAtIndex:(NSInteger)index;
+    @optional
+    -(UIView *)carouselViewSeparator:(Carousel *)carousel;
+    @end
 
 ## Delegate
-<blockquote>
-<p>@protocol CarouselDelegate<NSObject></p>
-<p>@optional</p>
-<p>-(void)carousel:(Carousel *)carousel focusOnIndex:(NSInteger)index;</p>
-<p>@end</p>
-</blockquote>
+    
+    @protocol CarouselDelegate<NSObject>
+    @optional
+    -(void)carousel:(Carousel *)carousel focusOnIndex:(NSInteger)index;
+    @end
+
+
+
 
 ## Options
 You have some options availabled defined in PPRevealSideOptions
