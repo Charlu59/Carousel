@@ -287,4 +287,8 @@
     initialIndex = firstIndex;
 }
 
+-(void)setUserInteractionEnabled:(BOOL)opt {
+    [scrollviewTop setUserInteractionEnabled:opt];
+}
+
 @end

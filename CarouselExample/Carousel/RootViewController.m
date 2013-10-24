@@ -45,6 +45,7 @@
     [myCarousel setInifiniteLoop:YES];
     [myCarousel animateWithPeriod:3];
     [myCarousel setBackCoverflow:YES];
+    [myCarousel setUserInteractionEnabled:NO];
     [myCarousel setInitialPage:5];
     [myCarousel show];
     [self.view addSubview:myCarousel];
