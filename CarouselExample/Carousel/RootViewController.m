@@ -43,9 +43,9 @@
     myCarousel.dataSource = self;
     myCarousel.delegate = self;
     [myCarousel setInifiniteLoop:YES];
-    [myCarousel animateWithPeriod:3];
+//    [myCarousel animateWithPeriod:3];
     [myCarousel setBackCoverflow:YES];
-    [myCarousel setUserInteractionEnabled:NO];
+    [myCarousel setUserInteractionEnabled:YES];
     [myCarousel setInitialPage:5];
     [myCarousel show];
     [self.view addSubview:myCarousel];

@@ -50,6 +50,7 @@
         [scrollviewTop setPagingEnabled:YES];
         scrollviewTop.delegate = self;
         [scrollviewTop setBackgroundColor:[UIColor clearColor]];
+        [scrollviewTop setShowsHorizontalScrollIndicator:NO];
         [self addSubview:scrollviewTop];
         self.hidden = YES;
     }
@@ -72,7 +73,8 @@
             scrollviewBack = [[UIScrollView alloc] initWithFrame:self.bounds];
             scrollviewBack.showsHorizontalScrollIndicator = NO;
             [scrollviewBack setBackgroundColor:[UIColor clearColor]];
-            
+            [scrollviewBack setShowsHorizontalScrollIndicator:NO];
+
             viewContentBack =[[UIView alloc] initWithFrame:scrollviewBack.frame];
             [viewContentBack addSubview:scrollviewBack];
             [self insertSubview:viewContentBack atIndex:0];

@@ -15,7 +15,7 @@
 @property (nonatomic, assign) id <CarouselDelegate> delegate;
 @property (nonatomic, assign) id <CarouselDataSource> dataSource;
 
--(void)setUserInteractionEnabled:(BOOL)opt;     //TODO
+-(void)setUserInteractionEnabled:(BOOL)opt;
 -(void)setBackCoverflow:(BOOL)opt;
 -(void)setInifiniteLoop:(BOOL)opt;
 -(void)setActiveCache:(BOOL)opt;
