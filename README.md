@@ -3,8 +3,11 @@ Carousel
 Carousel dynamique with many options
 
 ## DataSource
+
+You can custom your views as you want and optionally add a seperator if you put the backgroundview option
     
-    @protocol CarouselDataSource<NSObject>@required
+    @protocol CarouselDataSource<NSObject>
+    @required
     -(NSInteger)carouselNumberOfPages:(Carousel *)carousel;
     -(UIView *)carousel:(Carousel *)carousel viewForPageAtIndex:(NSInteger)index;
     @optional
@@ -12,6 +15,8 @@ Carousel dynamique with many options
     @end
 
 ## Delegate
+
+You are noticed when carousel focus on a page
     
     @protocol CarouselDelegate<NSObject>
     @optional
